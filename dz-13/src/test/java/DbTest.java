@@ -39,7 +39,7 @@ public class DbTest {
             insertStatement3.close();
 
 
-            //////-SELECT-/////
+            //////-UPDATE-/////
             String updateQuery = "UPDATE homework_user_data SET first_name = ? WHERE last_name = ?";
             PreparedStatement updateStatement = connection.prepareStatement(updateQuery);
             updateStatement.setString(1, "Annie");
